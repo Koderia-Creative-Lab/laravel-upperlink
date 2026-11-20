@@ -1,0 +1,54 @@
+{
+    "name": "koderia-creative-lab/laravel-upperlink",
+    "description": "A modern Laravel client and driver for the Upperlink (PayChoice / Paygate) payment gateway.",
+    "keywords": [
+        "laravel",
+        "upperlink",
+        "paygate",
+        "paychoice",
+        "nigeria",
+        "payment-gateway",
+        "payments"
+    ],
+    "homepage": "https://github.com/Koderia-Creative-Lab/laravel-upperlink",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Koderia Creative Lab",
+            "email": "iconcept573@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2|^8.3",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "illuminate/http": "^9.0|^10.0|^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5|^10.0",
+        "orchestra/testbench": "^7.0|^8.0|^9.0",
+        "mockery/mockery": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Koderia\\Upperlink\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Koderia\\Upperlink\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Koderia\\Upperlink\\UpperlinkServiceProvider"
+            ],
+            "aliases": {
+                "Upperlink": "Koderia\\Upperlink\\Facades\\Upperlink"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
